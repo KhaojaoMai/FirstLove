@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <style>
+    /* Add some styling for the page */
+    body {
+      /* background-image: url(https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_79603-1847.jpg?w=2000);       */
+      /* background-image: url(https://images.pexels.com/photos/776636/pexels-photo-776636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);       */
+      /* background-image: url(https://images.pexels.com/photos/220072/pexels-photo-220072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+      background-size: cover;
+      font-family: sans-serif;
+      text-align: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #660066;
+      margin-top: 50px;
+      font-size: 40px;
+      text-shadow: 2px 2px 5px #fff;
+    }
+
+    .message {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px #888888;
+      margin-top: 30px;
+      display: inline-block;
+      animation: message-fade-in 1s ease-out;
+    }
+
+    @keyframes message-fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    button {
+      padding: 10px 20px;
+      border: 2px solid #660066;
+      border-radius: 20px;
+      color: #660066;
+      background-color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px #888888;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #660066;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <h1>เค้ามีอะไรจะบอก</h1> -->
+  <h1>1233</h1>
+  <div class="message">
+    <p id="text"></p>
+    <button id="btn">พร้อมแล้วกดได้เลย</button>
+  </div>
+
+  <script>
+    // Select the elements we'll use
+    const btn = document.querySelector("#btn");
+    const text = document.querySelector("#text");
+
+    // Add a click event to the button
+    btn.addEventListener("click", function () {
+      var html_text =  "<div style='text-align: left;'>w' 9y;gv' .omujl6fdH57';yoouhc]h;muj9y;gv'iv8vp(i7gx]jkhokk) g8hk-v[86I,kdmujg-hk,kme.shg8hk,u8;k,iyd sy;.0g9hoiy;vud8iyh' g8hk,u8;k,l6-otmujwfhvp^jfh;pdyo mevtwiij;,dyo 9jk'qokq 9y;gv'gxHo8omujojkiydc[[Tii,=k9b,kd w,j9hv'c9j'g9b,.fqg]p vyoouhg8hk=v[,kd oblypdH8jvo-hk'fu,u8;k,giup[ihvp,u8;k,gxHoitg[up[ -hvglupdH,uot g=jo vki,INihvo =v[;jk=v[fjk g0hkcsj'dki['dki =v[.=h8;k,i6oci' w,jpv,8og]ppp xit,kIouh vtwiw,jfudHg]bd:tot g8hkvpkd.shgikvp67jfh;pdyowxokoqg]p .=h=u;b9fh;pdyo,u8;k,l6-fh;pdyoot</div>";
+
+      html_text += "<br><br><div id='changetxt' style='text-align: center;' onclick=change_text()><u>Click</u></div>"
+      
+      text.innerHTML = html_text;
+      btn.style.display = "none";
+    });
+
+    function change_text() {
+      document.getElementById("changetxt").innerHTML = "<h2> ดฟาห่กสดว </h2>";
+    }
+  </script>
+</body>
+
+</html>
